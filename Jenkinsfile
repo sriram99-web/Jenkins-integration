@@ -5,7 +5,6 @@ node {
             checkout scm    
       }     
       stage('Build image') {         
-            bat 'setpath="C:\Program Files\Docker\Docker\resources\bin"'
             app = docker.build("srirammaster/test")    
        }     
       stage('Test image') {           
