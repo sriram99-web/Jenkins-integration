@@ -3,9 +3,6 @@ node {
       environment {
       tool name: 'Docker', type: 'dockerTool'
       }
-      agent {
-        label 'ubuntu-1804 && amd64 && docker'
-      }
       
       stage('Clone repository') {               
              
