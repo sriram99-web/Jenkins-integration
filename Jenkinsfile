@@ -9,7 +9,7 @@ node {
             checkout scm    
       }     
       stage('Build image') {         
-            bat '{Docker} build -t test-app .'   
+            bat '{docker_tool} build -t test-app .'   
        }     
       stage('Test image') {           
             app.inside {            
