@@ -3,6 +3,7 @@ node {
       environment {
       tool name: 'Docker', type: 'dockerTool'
 }
+      
       stage('Clone repository') {               
              
             checkout scm    
