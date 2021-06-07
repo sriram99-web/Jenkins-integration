@@ -1,4 +1,4 @@
-pipeline {    
+node {    
       def app    
       environment {
       tool name: 'Docker', type: 'dockerTool'
