@@ -1,6 +1,6 @@
 node {    
       def app    
-      tools{
+      tool{
             docker 'Docker'
       }
       stage('Clone repository') {               
