@@ -1,7 +1,7 @@
 node {    
       def app    
       environment {
-      Docker = tool name: 'Docker'
+      tool name: 'Docker', type: 'dockerTool'
 }
       stage('Clone repository') {               
              
