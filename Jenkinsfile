@@ -11,11 +11,10 @@ node {
       stage('Build image') {         
             app = docker.build("app-test")   
        }     
-      stage('Test image') {           
-            app.inside {            
+      stage('Test image') {                      
              
              sh 'echo "Tests passed"'        
-            }    
+            
         }     
        stage('Push image') {
             docker.withRegistry('https://registry.hub.docker.com', 'docker') {            
