@@ -9,7 +9,7 @@ node {
             checkout scm    
       }     
       stage('Build image') {         
-            app = docker.build("app-test")   
+            app = docker.build("srirammaster/test-app")   
        }     
       stage('Test image') {                      
              
